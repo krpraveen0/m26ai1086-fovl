@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fovl-coursework"
+version = "0.1.0"
+description = "M.Tech Foundations of Vision and Language coursework"
+authors = [
+    { name = "Praveen Kumar",
+      email = "m26ai1086@iitj.ac.in"
+    },
+]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=7.0",
+    "jupyter>=1.0",
+    "matplotlib>=3.7",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["classes"]
+python_files = ["test_*.py"]
+addopts = "-ra"
+
+[tool.setuptools.packages.find]
+include = ["classes*"]
