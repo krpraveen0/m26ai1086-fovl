@@ -1,0 +1,15 @@
+# Python environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Jupyter-generated state
+.ipynb_checkpoints/
+
+# Local editor and OS files
+.DS_Store
+.idea/
+.vscode/
